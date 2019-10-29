@@ -1,4 +1,4 @@
-Project for landing page using SCSS.
+Project for landing page using SCSS and Float layout.
 
 This is one of the projects from advanced CSS and SASS course.
 
