@@ -72,3 +72,49 @@
         hyphens: auto;
     }
 }
+
+@include respond(tab-port) {
+    .popup {
+        &__content {
+            background-image: linear-gradient(
+                rgba($color-white, .85),
+                rgba($color-white, .9)),
+                url("../img/nat-8.jpg");
+            background-position: center;
+        }
+        &__left {
+            display: none;
+        }
+    }
+}
+
+@include respond(phone) {
+    .popup {
+        display: block;
+
+        &__content {
+            display: block;
+            background-image: linear-gradient(
+                rgba($color-white, .85),
+                rgba($color-white, .9)),
+                url("../img/nat-8.jpg");
+            background-position: center;
+        }
+        &__left {
+            display: none;
+        }
+
+        &__text {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+    
+            -moz-column-count: 2;
+            -moz-column-gap: 2rem;
+             -moz-column-rule: 1px solid $color-grey-light-2;
+    
+            column-count: 1;
+            // column-gap: 2rem;
+            // column-rule: 1px solid $color-grey-light-2;
+    }
+}
+}
